@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #bc5a5a;
+    --color-primary-100: #fe6a6a;
+    --bg-white: #fffcf8;
+    --bg-yellow: #fef4ea;
+    --text-primary: #00062f;
+    --text-secondary: #707070;
+    --text-secondary-100: #434343;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-primary-100 {
+    background-color: var(--color-primary-100);
+  }
+  .bg-yellow {
+    background-color: var(--bg-yellow);
+  }
+  .text-primary {
+    color: var(--text-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .text-secondary-100 {
+    color: var(--text-secondary-100);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-white);
+    font-family: "Nunito Sans", sans-serif;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--text-primary);
+    line-height: 52px;
+  }
+
+  .container {
+    max-width: 1200px !important;
+
+    padding: 0 10px;
+    margin: auto;
+  }
+  .btn-outlined {
+    border: 1px solid #000000;
+    padding: 15px 20px;
+    border-radius: 30px;
+  }
+  .text-15-custom * {
+    font-size: 15px !important;
+  }
+}
